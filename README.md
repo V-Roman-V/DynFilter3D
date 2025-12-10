@@ -1,9 +1,18 @@
-# DynFilter3D
+<h1 align="center">DynFilter3D</h1>
 
-_Status: work in progress. The API may change without notice._
+<p align="center">
+  <strong>Dynamic object filtering for 3D LiDAR point clouds using spatiotemporal geometry</strong>
+</p>
 
-Dynamic object filtering for 3D LiDAR point clouds using spatiotemporal geometry.
+<p align="center">
+  <img src="https://img.shields.io/badge/status-WIP-yellow.svg">
+  <img src="https://img.shields.io/badge/python-3.9%20|%203.10%20|%203.11-blue.svg">
+  <img src="https://img.shields.io/badge/c++-17-blue.svg">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg">
+</p>
 
+
+> **Status:** Work in progress. The API may change without notice.  
 > **TODO:** Add a teaser image or short demo video illustrating the algorithm.
 
 ## Introduction
