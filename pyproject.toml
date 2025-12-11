@@ -1,0 +1,22 @@
+[build-system]
+requires = ["scikit-build-core>=0.10", "nanobind>=2.2", "numpy", "ninja>=1.10"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "dynfilter3d"
+version = "0.0.1"
+description = "Dynamic point filtering for 3D LiDAR point clouds using spatiotemporal geometry (Python + C++)"
+authors = [{ name = "Roman Voronov", email = "vor.roman.v@gmail.com" }]
+maintainers = [{ name = "Roman Voronov", email = "vor.roman.v@gmail.com" }]
+requires-python = ">=3.8"
+dependencies = ["numpy"]
+readme = "README.md"
+
+[tool.scikit-build]
+wheel.packages = ["src/dynfilter3d"]
+cmake.minimum-version = "3.16"
+ninja.minimum-version = "1.10"
+
+[tool.scikit-build.cmake.define]
+CMAKE_BUILD_TYPE = "Release"
+NB_USE_CMAKE_CONFIG = "ON"

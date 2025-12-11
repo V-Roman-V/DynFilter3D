@@ -1,41 +1,58 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
 *.pdb
+*.pkl
 
-# Compiled Dynamic libraries
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# Editable installs & metadata
+*.egg-info/
+*.egg
+*.eggs/
+*.manifest
+*.spec
+
+# pyproject / build-system outputs
+dist/
+build/
+*.whl
+pip-wheel-metadata/
+scikit_build_core/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# -------------------------
+# C++ / CMake / scikit-build
+# -------------------------
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Compiled artifacts
+*.o
 *.so
-*.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.dylib
 *.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+# nanobind build artifacts
+*_dynfilter3d.*.so
+*_dynfilter3d.*.pyd
 
-# debug information files
-*.dwo
+# Local build folder (out-of-source build)
+build/
+_build/
+cmake-build-*/
