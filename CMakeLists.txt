@@ -9,10 +9,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Python COMPONENTS Interpreter Development.Module REQUIRED)
 find_package(nanobind CONFIG REQUIRED)
 
-# --- Python module ---
-nanobind_add_module(_dynfilter3d
-    cpp/dynfilter3d/bindings.cpp
-)
-
-install(TARGETS _dynfilter3d
-        LIBRARY DESTINATION ${SKBUILD_PLATLIB_DIR}/dynfilter3d)
+# ---- C++ extension ----
+add_subdirectory(cpp/dynfilter3d)
