@@ -1,4 +1,6 @@
 #include <nanobind/nanobind.h>
+#include <nanobind/eigen/dense.h>
+
 namespace nb = nanobind;
 
 NB_MODULE(_dynfilter3d, m) {
